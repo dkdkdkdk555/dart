@@ -32,7 +32,7 @@ void main() {
   // name5 = 'nnnn'; // can't change
 
   /**
-   * 지연 할당, 지연 초기화 
+   * 지연할당, 지연초기화 
    * 선언만 먼저하고 값은 나중에 줄 수 있음. data fetching할때 유리
    */
   late final String name6;
