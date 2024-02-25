@@ -2,6 +2,7 @@
  * Mixins
  * 생성자가 없는 클래스!
  * 클래스에 프로퍼티를 추가할 때 사용
+ * 여러 클래스에 재 사용이 가능!!
  */
 mixin class Strong {
   final double strenghtLevel = 1500.99;
@@ -17,9 +18,11 @@ mixin class Tall {
   final double height = 1.99;
 }
 
-class Prayer with Strong, QuickRunner {
+class Prayer with Strong, QuickRunner, Tall {
 
 }
+
+class Horse with Strong, QuickRunner {}
 
 
 /**
@@ -35,7 +38,7 @@ class Human {
 
 enum Team { blue, red}
 
-class Player extends Human {
+class Player extends Human with Strong, QuickRunner, Tall {
   final Team team;
 
   Player({
@@ -52,4 +55,5 @@ class Player extends Human {
 
 void main(){
  var player = Player(team: Team.red, name :"nico");
+//  player.height
 }

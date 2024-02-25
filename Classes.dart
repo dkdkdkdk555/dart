@@ -44,7 +44,7 @@ void main(){
   // var player2 = Player("ukhyeon", 11000);
   // player2.sayHello();
 
-  var prayer = Prayer(name: 'name', xp: 1200, team: 'team', age: 18);
+  var prayer = Prayer(name: 'name', xp: 1200, age: 18, team: 'team');
 
 
   var bPlayer = Player.createBluePlayer(

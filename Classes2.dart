@@ -3,7 +3,7 @@
  * : 다른 클래스들의 청사진
  */
 abstract class Human {
-  void walk();
+  void walk(); // 상속받으면 해당 메소드 재정의 하도록 강제
 
 }
 
@@ -36,12 +36,13 @@ class Player extends Human{
 void main(){
   /**
    * Cascade Notation
+   * 중복제거 용도
    */
   var nico = Player(name: "name", xp: 1200, team: Team.blue)
-  ..name = 'las'
+  ..name = 'las' // nico.name = 'las' 와 같다.
   ..xp = 120000
   ..team = Team.blue;
-
+ 
   var nico2 = Player(name: "name", xp: 1200, team: Team.red);
   var potato = nico2
   ..name = 'las'
