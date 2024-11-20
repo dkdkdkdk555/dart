@@ -14,14 +14,17 @@ void main() {
   /**
    *  on Dart, which value might be null
    */
-  String? nico  = 'nico'; // String , String? is different
-  nico = null; // 'String nico' can't be 'null' but String? could be 'null'
+
+  // Nullable 타입
+  String? nico  = null; // String , String? is different
+  //nico = null; // 'String nico' can't be 'null' but String? could be 'null'
   // [1] checking, isn't empty
   if(nico != null){
-    nico.isNotEmpty;
+    nico.isNotEmpty; // nico가 null이라면 에러가 발생 즉, null이 아닐때만 사용할 수 있는 속성 
   }
   // [2] checking sol2, isn't empty / nico가 null이 아니면 실행함!!
-  nico?.isNotEmpty; 
+  // Null-safe 연산자
+  nico.isNotEmpty; // String 으로 선언한 경우는 어차피 null일 경우가 없어서 '변수명?' 으로 써주는게 무의미,,
   // [1][2] is the same logic, 
 
 
@@ -29,7 +32,7 @@ void main() {
    *  Type that cannot be modified
    */
   final name5 = 'nico';
-  // name5 = 'nnnn'; // can't change
+  //name5 = 'nnnn'; // can't change
 
   /**
    * 지연할당, 지연초기화 
@@ -46,7 +49,7 @@ void main() {
    * 그래서 앱을 올리기 전에 이미 알고있는 값을 const로 선언하는게 좋다.
    */
   const name7 = 'nico';
-  // name7 = '12'; compile error
+  //name7 = '12'; //compile error
   print(name7);
 
 }
