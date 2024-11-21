@@ -24,7 +24,7 @@ void main() {
   }
   // [2] checking sol2, isn't empty / nico가 null이 아니면 실행함!!
   // Null-safe 연산자
-  nico.isNotEmpty; // String 으로 선언한 경우는 어차피 null일 경우가 없어서 '변수명?' 으로 써주는게 무의미,,
+  nico?.isNotEmpty; // String 으로 선언한 경우는 어차피 null일 경우가 없어서 '변수명?' 으로 써주는게 무의미,,
   // [1][2] is the same logic, 
 
 
