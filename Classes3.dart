@@ -55,5 +55,5 @@ class Player extends Human with Strong, QuickRunner, Tall {
 
 void main(){
  var player = Player(team: Team.red, name :"nico");
-//  player.height
+ print(player.height);
 }

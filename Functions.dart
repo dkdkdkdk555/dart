@@ -1,6 +1,6 @@
 
 /**
- * Positional Prameter
+ * Positional Parameter
  */
 String sayHello(String name){
   return "Hello $name nice to meet you!";
